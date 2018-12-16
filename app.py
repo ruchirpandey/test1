@@ -38,8 +38,11 @@ def processRequest(req):
     yql_query = makeYqlQuery(req)
     print('4')
     if yql_query is None:
+        print('yql query is none')
         return {}
+    print('5')
     yql_url = baseurl + urllib.urlencode({'q': yql_query}) + "&format=json"
+    print('6')
     print(yql_url)
 
     result = urllib.urlopen(yql_url).read()
