@@ -40,7 +40,7 @@ def processRequest(req):
     if yql_query is None:
         print('yql query is none')
         return {}
-    print('5')
+    print('5',yql_query)
     yql_url = baseurl + urllib.urlencode({'q': yql_query}) + "&format=json"
     print('6')
     print(yql_url)
