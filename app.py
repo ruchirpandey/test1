@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import urllib2 as urllib
+import urllib
 import json
 import os
 
