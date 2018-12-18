@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import urllib
+import urllib2 as urllib
 import json
 import os
 
@@ -44,7 +44,7 @@ def processRequest(req):
     yql_url = baseurl + urllib.urlencode({'q': yql_query}) + "&format=json"
     print('6')
     print(yql_url)
-
+#     urllib.request.urlopen()
     result = urllib.urlopen(yql_url).read()
     print("yql result: ")
     print(result)
