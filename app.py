@@ -4,9 +4,10 @@ import urllib
 import json
 import os
 
-from flask import Flask
+from flask import Flask, render_template, flash, request
 from flask import request
 from flask import make_response
+from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
 
 # Flask app should start in global layout
 app = Flask(__name__)
@@ -14,6 +15,27 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return "Hello World!"
+from flask import Flask
+ 
+class ReusableForm(Form):
+      name = TextField('Name:', validators=[validators.required()])
+ 
+@app.route("/form", methods=['GET', 'POST'])
+def hello():
+form = ReusableForm(request.form)
+ 
+print form.errors
+if request.method == 'POST':
+   name=request.form['name']
+   print name
+ 
+if form.validate():
+# Save the comment here.
+   flash('Hello ' + name)
+else:
+flash('All the form fields are required. ')
+ 
+return render_template('hello.html', form=form)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
