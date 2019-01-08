@@ -7,7 +7,7 @@ import os
 from flask import Flask, render_template, flash, request
 from flask import request
 from flask import make_response
-from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
+# from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
 
 # Flask app should start in global layout
 app = Flask(__name__)
