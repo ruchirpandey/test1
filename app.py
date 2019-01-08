@@ -14,6 +14,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
+    print("Hello I am here")
     return "Hello World!"
 from flask import Flask
  
