@@ -34,8 +34,7 @@ def hello1():
        flash('Hello ' + name)
     else:
        flash('All the form fields are required. ')
- 
-return render_template('hello.html', form=form)
+    return render_template('hello.html', form=form)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
