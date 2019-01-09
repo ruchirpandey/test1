@@ -53,7 +53,7 @@ def processRequest(req):
 #     urllib.request.urlopen()
 #     result = urllib.urlopen(yql_url).read()
     result = req
-    print("yql result: ")
+    print("yql result is : ")
     print(result)
 
     data = json.loads(result)
