@@ -51,7 +51,8 @@ def processRequest(req):
     print('6')
     print(yql_url)
 #     urllib.request.urlopen()
-    result = urllib.urlopen(yql_url).read()
+#     result = urllib.urlopen(yql_url).read()
+    result = req
     print("yql result: ")
     print(result)
 
