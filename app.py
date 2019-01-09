@@ -58,7 +58,7 @@ def processRequest(req):
 
     # data = json.loads(result)
     # res = makeWebhookResult(data)
-    return 'your request is successful'
+    return 'your requestS are successful'
 
 
 def makeYqlQuery(req):
