@@ -1,5 +1,5 @@
 from flask import Flask
- 
+
 class ReusableForm(Form):
       name = TextField('Name:', validators=[validators.required()])
  
