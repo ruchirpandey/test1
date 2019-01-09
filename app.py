@@ -56,9 +56,9 @@ def processRequest(req):
     print("yql result is : ")
     print(result)
 
-    data = json.loads(result)
-    res = makeWebhookResult(data)
-    return res
+    # data = json.loads(result)
+    # res = makeWebhookResult(data)
+    return 'your request is successful'
 
 
 def makeYqlQuery(req):
