@@ -17,6 +17,11 @@ def hello():
     print("Hello I am here")
     return "Hello World!"
 
+@app.route('/sachin')
+def sachin():
+    print("Hello I am here")
+    return "Hello Sachin ssss!"
+
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
