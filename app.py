@@ -25,7 +25,7 @@ def sachin():
 @app.route('/action', methods=['POST'])
 def action():
     req = request.get_json(silent=True, force=True)
-    action = data['queryResult']['parameters']['Holidays']
+    action = req['queryResult']['parameters']['Holidays']
     response =  """
             Title : {0}
             Released: {1}
