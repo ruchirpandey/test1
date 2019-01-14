@@ -22,7 +22,21 @@ def sachin():
     print("Hello I am heressas")
     return "Hello again Sachin !"
 
+@app.route('/action', methods=['POST'])
+def action():
+    req = request.get_json(silent=True, force=True)
+    action = data['queryResult']['parameters']['Holidays']
+    response =  """
+            Title : {0}
+            Released: {1}
+            Actors: {2}
+            Plot: {3}
+            """.format('Hilidays are', 'here', 'on holi', 'with sss')
+    reply = {
+            "fulfillmentText": response,
+        }
 
+    return jsonify(reply)
 @app.route('/webhook', methods=['POST'])
 def webhook():
     req = request.get_json(silent=True, force=True)
