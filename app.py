@@ -26,7 +26,7 @@ def sachin():
 def action():
     req = request.get_json(silent=True, force=True)
     print("in comin grequest",req)
-    action = req['queryResult']['parameters']['Holidays']
+    action = req['queryResult']['parameters']['Holiday']
     response =  """
             Title : {0}
             Released: {1}
