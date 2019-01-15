@@ -32,7 +32,7 @@ def action():
             Released: {1}
             Actors: {2}
             Plot: {3}
-            """.format('Hilidays are', 'here', 'on holi', 'with sss')
+            """.format('Hilidays are', 'here', 'on holi', 'from gaurav')
     reply = {
             "fulfillmentText": response,
         }
