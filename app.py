@@ -29,19 +29,13 @@ def action():
     action = req['queryResult']['parameters']['Holiday']
     month = req['queryResult']['parameters']['Months']
     response =  """
-                Title : {0}
-                Released: {1}
-                Actors: {2}
-                Plot: {3}
-                """.format('You inquired', 'Holidays', 'with out', 'Month')
+                Response : {0}
+                """.format('You inquired Holidays with out Month parameter')
     reply = {"fulfillmentText": response,}
     if month != '':
        response =  """
-                Title : {0}
-                Released: {1}
-                Actors: {2}
-                Plot: {3}
-                """.format('You inquired', 'Holidays', 'with', 'Month')
+                Response : {0}
+                """.format('You inquired Holidays with Month parameter')
        reply = {
             "fulfillmentText": response,
         }
