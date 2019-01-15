@@ -35,7 +35,7 @@ def action():
                 Plot: {3}
                 """.format('You inquired', 'Holidays', 'with out', 'Month')
     reply = {"fulfillmentText": response,}
-    if month != ''
+    if month != '':
        response =  """
                 Title : {0}
                 Released: {1}
