@@ -27,13 +27,24 @@ def action():
     req = request.get_json(silent=True, force=True)
     print("in comin grequest",req)
     action = req['queryResult']['parameters']['Holiday']
+    month = req['queryResult']['parameters']['Months']
     response =  """
-            Title : {0}
-            Released: {1}
-            Actors: {2}
-            Plot: {3}
-            """.format('Hilidays are', 'here', 'on holi', 'from gaurav')
-    reply = {
+                Title : {0}
+                Released: {1}
+                Actors: {2}
+                Plot: {3}
+                """.format('You inquired', 'Holidays', 'with out', 'Month')
+       reply = {
+            "fulfillmentText": response,
+        }
+    if month != ''
+       response =  """
+                Title : {0}
+                Released: {1}
+                Actors: {2}
+                Plot: {3}
+                """.format('You inquired', 'Holidays', 'with', 'Month')
+       reply = {
             "fulfillmentText": response,
         }
 
