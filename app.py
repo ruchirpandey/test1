@@ -30,12 +30,12 @@ def action():
     month = req['queryResult']['parameters']['Months']
     response =  """
                 Response : {0}
-                """.format('You inquired Holidays with out Month parameter')
+                """.format('Hello Manisha - You inquired Holidays with out Month parameter')
     reply = {"fulfillmentText": response,}
     if month != '':
        response =  """
                 Response : {0}
-                """.format('You inquired Holidays with Month parameter')
+                """.format('Hello Kirti You inquired Holidays with Month parameter')
        reply = {
             "fulfillmentText": response,
         }
