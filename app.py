@@ -21,6 +21,10 @@ def hello():
 def sachin():
     print("Hello I am heressas")
     return "Hello again Sachin !"
+@app.route('/sattu')
+def sachin():
+    print("Hello I am heressas")
+    return "Hello sattu I love you !"
 
 @app.route('/action', methods=['POST'])
 def action():
