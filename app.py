@@ -15,7 +15,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     print("Hello Ittsts am here")
-    return "Hello World! Iaskalsakslakls am auto deployed"
+    return "Hello World! See I got Auto deployed"
 
 @app.route('/sachin')
 def sachin():
