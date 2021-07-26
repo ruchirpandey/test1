@@ -22,7 +22,7 @@ def sachin():
     print("Hello I am heressas")
     return "Hello again Sachin !"
 @app.route('/sattu')
-def sachin():
+def new1():
     print("Hello I am heressas")
     return "Hello sattu I love you !"
 
